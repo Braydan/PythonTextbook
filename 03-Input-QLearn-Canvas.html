@@ -1,0 +1,280 @@
+<div style="font-family: "Poppins", sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #1e293b; line-height: 1.6; min-height: 100vh; padding: 2rem; margin: 0;">
+
+<nav class="nav-bar" style="background: white; padding: 1rem 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); position: sticky; top: 0; z-index: 100;">
+<div class="nav-content" style="max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+<a class="nav-home" href="/pages/00-homepage-canvas" style='font-family: "Fredoka", sans-serif; font-size: 1.3rem; color: #3b82f6; text-decoration: none; font-weight: 700;'>🐍 Python Learning Hub</a>
+<span style="color: var(--text-light);">Lesson 02</span>
+</div>
+</nav>
+<div class="container" style="max-width: 1000px; margin: 0 auto; padding: 2rem;">
+<div class="lesson-header" style="background: white; border-radius: 20px; padding: 3rem 2.5rem; margin-bottom: 2rem; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12); position: relative; overflow: hidden; border-top: 6px solid #3b82f6;">
+<div class="lesson-number" style='display: inline-block; background: linear-gradient(135deg, #3b82f6, #8b5cf6); color: white; padding: 0.5rem 1.5rem; border-radius: 12px; font-family: "Fredoka", sans-serif; font-weight: 700; margin-bottom: 1rem;'>Lesson 03</div>
+<p class="lesson-intro" style="font-size: 1.2rem; color: #64748b; line-height: 1.8; margin-bottom: 1rem;">
+                Learn how to collect user input to make your programs interactive and responsive.
+            </p>
+</div>
+<div class="content-section" style="background: white; border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+<h2 style='font-family: "Fredoka", sans-serif; font-size: 2rem; color: #3b82f6; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #f8fafc; margin-top: 0;'>What is Input?</h2>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                Input is how your program <strong style="color: #3b82f6; font-weight: 600;">receives information</strong> from the user. While output lets 
+                your program "speak" to users, input lets users "speak" to your program.
+            </p>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                In Python, we use the <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>input()</code> function to get information from users. This makes 
+                your programs interactive - they can respond differently based on what the user types!
+            </p>
+<div class="info-box" style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.08), rgba(118, 75, 162, 0.08)); border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+<h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; margin: 0;'>💡 Why is Input Important?</h4>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                    Without input, every program would do exactly the same thing every time. Input allows you to 
+                    create personalized experiences, get user choices, and make programs that adapt to different 
+                    situations!
+                </p>
+</div>
+</div>
+<div class="content-section" style="background: white; border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+<h2 style='font-family: "Fredoka", sans-serif; font-size: 2rem; color: #3b82f6; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #f8fafc; margin-top: 0;'>The input() Function</h2>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Basic Usage</h3>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">The <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>input()</code> function shows a message to the user and waits for them to type something:</p>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'>name = input("What is your name? ")
+print("Hello,", name)</code></pre></div>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;"><strong style="color: #3b82f6; font-weight: 600;">How it works:</strong></p>
+<ol style="margin: 1rem 0 1rem 2rem;">
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">The program displays the message in the parentheses</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">The program waits for the user to type something and press Enter</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Whatever the user typed gets stored in the variable</li>
+</ol>
+<div class="success-box" style="background: #d1fae5; border-left: 4px solid #10b981; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+<h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; margin: 0;'>✓ Try It Yourself</h4>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                    Create a new file called <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>greeting.py</code>. Copy the code above and run it. 
+                    Type your name when prompted and see what happens!
+                </p>
+</div>
+</div>
+<div class="content-section" style="background: white; border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+<h2 style='font-family: "Fredoka", sans-serif; font-size: 2rem; color: #3b82f6; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #f8fafc; margin-top: 0;'>Storing Input in Variables</h2>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                The input you collect needs to be stored somewhere so you can use it later. We store it in 
+                <strong style="color: #3b82f6; font-weight: 600;">variables</strong>:
+            </p>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'>age = input("How old are you? ")
+print("You are", age, "years old")</code></pre></div>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Using Multiple Inputs</h3>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">You can ask for multiple pieces of information:</p>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'>first_name = input("First name: ")
+last_name = input("Last name: ")
+age = input("Age: ")
+
+print("Hello,", first_name, last_name)
+print("You are", age, "years old")</code></pre></div>
+<div class="info-box" style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.08), rgba(118, 75, 162, 0.08)); border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+<h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; margin: 0;'>📝 Variable Naming Tips</h4>
+<ul style="margin: 1rem 0 1rem 2rem;">
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Use descriptive names: <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>age</code> instead of <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>a</code></li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Use underscores for multiple words: <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>first_name</code></li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Lowercase letters for variable names</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">No spaces allowed in variable names</li>
+</ul>
+</div>
+</div>
+<div class="content-section" style="background: white; border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+<h2 style='font-family: "Fredoka", sans-serif; font-size: 2rem; color: #3b82f6; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #f8fafc; margin-top: 0;'>The Input is Always a String!</h2>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                This is <strong style="color: #3b82f6; font-weight: 600;">very important</strong>: Everything you get from <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>input()</code> is treated 
+                as text (a string), even if the user types a number!
+            </p>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>The Problem</h3>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'># This won't work as expected!
+age = input("How old are you? ")
+next_year = age + 1  # ERROR!</code></pre></div>
+<div class="warning-box" style="background: #fef3c7; border-left: 4px solid #f59e0b; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+<h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; margin: 0;'>⚠️ Why does this fail?</h4>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                    Python thinks <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>age</code> is text, not a number. You can't add 1 to text! 
+                    This will give you a <strong style="color: #3b82f6; font-weight: 600;">TypeError</strong>.
+                </p>
+</div>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Converting Input to Numbers</h3>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">To use input as a number, you must <strong style="color: #3b82f6; font-weight: 600;">convert</strong> it:</p>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'># For whole numbers (integers)
+age = int(input("How old are you? "))
+next_year = age + 1
+print("Next year you'll be", next_year)
+
+# For decimal numbers (floats)
+height = float(input("Height in meters: "))
+doubled = height * 2
+print("Double your height is", doubled)</code></pre></div>
+<div class="info-box" style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.08), rgba(118, 75, 162, 0.08)); border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+<h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; margin: 0;'>💡 Conversion Functions</h4>
+<ul style="margin: 1rem 0 1rem 2rem;">
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;"><code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>int()</code> - Converts to whole number (integer)</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;"><code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>float()</code> - Converts to decimal number (float)</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;"><code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>str()</code> - Converts to text (string) - rarely needed for input</li>
+</ul>
+</div>
+</div>
+<div class="content-section" style="background: white; border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+<h2 style='font-family: "Fredoka", sans-serif; font-size: 2rem; color: #3b82f6; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #f8fafc; margin-top: 0;'>Working with Different Data Types</h2>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Example: Calculator Program</h3>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'># Get two numbers from user
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+# Perform calculations
+sum_result = num1 + num2
+difference = num1 - num2
+product = num1 * num2
+quotient = num1 / num2
+
+# Display results
+print("Sum:", sum_result)
+print("Difference:", difference)
+print("Product:", product)
+print("Quotient:", quotient)</code></pre></div>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Example: Name and Age Program</h3>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'>name = input("What's your name? ")
+age = int(input("How old are you? "))
+
+print("Hello", name + "!")
+print("In 10 years, you'll be", age + 10, "years old")
+print("In 20 years, you'll be", age + 20, "years old")</code></pre></div>
+<div class="success-box" style="background: #d1fae5; border-left: 4px solid #10b981; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+<h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; margin: 0;'>✓ Notice the Difference</h4>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                    For <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>name</code>, we keep it as a string (no conversion). For <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>age</code>, 
+                    we convert to integer with <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>int()</code> so we can do math with it!
+                </p>
+</div>
+</div>
+<div class="content-section" style="background: white; border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+<h2 style='font-family: "Fredoka", sans-serif; font-size: 2rem; color: #3b82f6; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #f8fafc; margin-top: 0;'>Input Validation Basics</h2>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                Sometimes users type things that don't make sense for your program. Here are some ways to 
+                handle this:
+            </p>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Adding Clear Instructions</h3>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'># Be specific in your prompt
+age = int(input("Enter your age (numbers only): "))
+choice = input("Would you like to continue? (yes/no): ")</code></pre></div>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>What Happens with Bad Input?</h3>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'># If user types "hello" instead of a number:
+age = int(input("How old are you? "))
+# This will cause a ValueError!</code></pre></div>
+<div class="warning-box" style="background: #fef3c7; border-left: 4px solid #f59e0b; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+<h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; margin: 0;'>⚠️ Common Input Errors</h4>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                    If a user types letters when you're expecting a number, your program will crash with 
+                    a <strong style="color: #3b82f6; font-weight: 600;">ValueError</strong>. We'll learn how to handle these errors properly in the 
+                    Error Handling lesson!
+                </p>
+</div>
+<div class="info-box" style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.08), rgba(118, 75, 162, 0.08)); border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+<h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; margin: 0;'>💡 Good Practice</h4>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                    Always give clear instructions in your <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>input()</code> prompts so users know 
+                    exactly what type of information you're expecting.
+                </p>
+</div>
+</div>
+<div class="content-section" style="background: white; border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+<h2 style='font-family: "Fredoka", sans-serif; font-size: 2rem; color: #3b82f6; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #f8fafc; margin-top: 0;'>Common Mistakes and How to Fix Them</h2>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Mistake 1: Forgetting to Store Input</h3>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'># ❌ Wrong - input is displayed but not saved
+input("What is your name? ")
+print("Hello,", name)  # ERROR: name is not defined!
+
+# ✅ Correct - store input in a variable
+name = input("What is your name? ")
+print("Hello,", name)</code></pre></div>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Mistake 2: Forgetting to Convert to Number</h3>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'># ❌ Wrong - can't do math with strings
+age = input("How old are you? ")
+next_year = age + 1  # ERROR!
+
+# ✅ Correct - convert to integer first
+age = int(input("How old are you? "))
+next_year = age + 1</code></pre></div>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Mistake 3: Missing Parentheses</h3>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'># ❌ Wrong - missing closing parenthesis
+name = input("What is your name? "
+
+# ✅ Correct - both parentheses present
+name = input("What is your name? ")</code></pre></div>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Mistake 4: Converting When Not Needed</h3>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'># ❌ Unnecessary - name should stay as string
+name = int(input("What is your name? "))
+
+# ✅ Correct - keep name as string
+name = input("What is your name? ")</code></pre></div>
+</div>
+<div class="content-section" style="background: white; border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+<h2 style='font-family: "Fredoka", sans-serif; font-size: 2rem; color: #3b82f6; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #f8fafc; margin-top: 0;'>Practice Exercises</h2>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Exercise 1: Personal Information</h3>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">Create a program that asks for and displays:</p>
+<ul style="margin: 1rem 0 1rem 2rem;">
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Your name</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Your age</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Your favorite color</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Your favorite number</li>
+</ul>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">Display all this information in a nice formatted message.</p>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Exercise 2: Simple Calculator</h3>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">Create a calculator that:</p>
+<ol style="margin: 1rem 0 1rem 2rem;">
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Asks the user for two numbers</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Asks what operation they want (+, -, *, /)</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Performs the calculation</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Displays the result</li>
+</ol>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Exercise 3: Age in Days</h3>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">Write a program that:</p>
+<ol style="margin: 1rem 0 1rem 2rem;">
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Asks the user for their age in years</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Calculates how many days old they are (multiply by 365)</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Displays the result</li>
+</ol>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;"><em>Challenge:</em> Also calculate hours and minutes!</p>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Exercise 4: Temperature Converter</h3>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">Create a program that:</p>
+<ol style="margin: 1rem 0 1rem 2rem;">
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Asks for a temperature in Celsius</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Converts it to Fahrenheit using: F = C × 9/5 + 32</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Displays both temperatures</li>
+</ol>
+<div class="success-box" style="background: #d1fae5; border-left: 4px solid #10b981; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+<h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; margin: 0;'>🎯 Challenge Exercise</h4>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                    Create a "Mad Libs" style story program! Ask the user for different words (noun, verb, 
+                    adjective, etc.) and then display a funny story using their inputs.
+                </p>
+</div>
+</div>
+<div class="content-section" style="background: white; border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+<h2 style='font-family: "Fredoka", sans-serif; font-size: 2rem; color: #3b82f6; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #f8fafc; margin-top: 0;'>Key Takeaways</h2>
+<ul style="margin: 1rem 0 1rem 2rem;">
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;"><code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>input()</code> is used to get information from users</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Always store input in a variable to use it later</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Input is <strong style="color: #3b82f6; font-weight: 600;">always a string</strong> - convert it if you need a number</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Use <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>int()</code> for whole numbers and <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>float()</code> for decimals</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Give clear instructions in your input prompts</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Make your prompts specific about what type of data you expect</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Remember: Input makes your programs interactive and personalized!</li>
+</ul>
+<div class="info-box" style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.08), rgba(118, 75, 162, 0.08)); border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+<h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; margin: 0;'>🎯 What's Next?</h4>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                    Now you can get input AND display output! Next, you'll learn about comments - how to 
+                    document your code so you (and others) can understand what it does.
+                </p>
+</div>
+</div>
+<div class="nav-buttons" style="display: flex; justify-content: space-between; margin-top: 3rem; gap: 1rem;">
+<a class="btn btn-secondary" href="/pages/02-output-qlearn-canvas" style='display: inline-block; padding: 1rem 2rem; background: linear-gradient(135deg, #3b82f6, #8b5cf6); color: white; text-decoration: none; border-radius: 12px; font-family: "Fredoka", sans-serif; font-weight: 600; box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);display: inline-block; padding: 1rem 2rem; background: white; color: #3b82f6; border: 2px solid #3b82f6; text-decoration: none; border-radius: 12px; font-family: "Fredoka", sans-serif; font-weight: 600;display: inline-block; padding: 1rem 2rem; background: white; color: #3b82f6; border: 2px solid #3b82f6; text-decoration: none; border-radius: 12px; font-family: "Fredoka", sans-serif; font-weight: 600;'>← Previous: Output</a>
+<a class="btn" href="/pages/04-comments-qlearn-canvas" style='display: inline-block; padding: 1rem 2rem; background: linear-gradient(135deg, #3b82f6, #8b5cf6); color: white; text-decoration: none; border-radius: 12px; font-family: "Fredoka", sans-serif; font-weight: 600; box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);'>Next: Comments →</a>
+</div>
+</div>
+<footer><p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">Year 9 Digital Technologies | Python Learning Hub</p></footer>
+
+</div>

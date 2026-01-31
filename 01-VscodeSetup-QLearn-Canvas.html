@@ -1,0 +1,183 @@
+<div style="font-family: "Poppins", sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #1e293b; line-height: 1.6; min-height: 100vh; padding: 2rem; margin: 0;">
+
+<nav class="nav-bar" style="background: white; padding: 1rem 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); position: sticky; top: 0; z-index: 100;">
+<div class="nav-content" style="max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+<a class="nav-home" href="/pages/00-homepage-canvas" style='font-family: "Fredoka", sans-serif; font-size: 1.3rem; color: #3b82f6; text-decoration: none; font-weight: 700;'>🐍 Python Learning Hub</a>
+<span style="color: var(--text-light);">Lesson 00</span>
+</div>
+</nav>
+<div class="container" style="max-width: 1000px; margin: 0 auto; padding: 2rem;">
+<div class="lesson-header" style="background: white; border-radius: 20px; padding: 3rem 2.5rem; margin-bottom: 2rem; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12); position: relative; overflow: hidden; border-top: 6px solid #3b82f6;">
+<div class="lesson-number" style='display: inline-block; background: linear-gradient(135deg, #3b82f6, #8b5cf6); color: white; padding: 0.5rem 1.5rem; border-radius: 12px; font-family: "Fredoka", sans-serif; font-weight: 700; margin-bottom: 1rem;'>Lesson 01</div>
+<p class="lesson-intro" style="font-size: 1.2rem; color: #64748b; line-height: 1.8; margin-bottom: 1rem;">
+                Learn how to use Visual Studio Code (VSCode) to write and run Python programs on your lab computer.
+            </p>
+</div>
+<div class="content-section" style="background: white; border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+<h2 style='font-family: "Fredoka", sans-serif; font-size: 2rem; color: #3b82f6; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #f8fafc; margin-top: 0;'>What is VSCode?</h2>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                Visual Studio Code (VSCode) is a powerful, free code editor made by Microsoft. It's one of the most 
+                popular tools that programmers use to write code in many different languages, including Python.
+            </p>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                Think of VSCode as a super-powered text editor designed specifically for programming. It helps you 
+                write code by highlighting different parts in different colors, catching mistakes, and providing 
+                helpful suggestions as you type.
+            </p>
+<div class="info-box" style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.08), rgba(118, 75, 162, 0.08)); border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+<h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; margin: 0;'>💡 Why VSCode?</h4>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                    VSCode is industry-standard software used by professional developers worldwide. Learning to use 
+                    it now will give you skills that transfer to real-world programming jobs!
+                </p>
+</div>
+</div>
+<div class="content-section" style="background: white; border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+<h2 style='font-family: "Fredoka", sans-serif; font-size: 2rem; color: #3b82f6; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #f8fafc; margin-top: 0;'>Opening VSCode on Your Lab PC</h2>
+<ol style="margin: 1rem 0 1rem 2rem;">
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;"><strong style="color: #3b82f6; font-weight: 600;">Click the Start Menu</strong> (Windows logo in bottom-left corner)</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;"><strong style="color: #3b82f6; font-weight: 600;">Type "Visual Studio Code"</strong> or look for the VSCode icon</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;"><strong style="color: #3b82f6; font-weight: 600;">Click on Visual Studio Code</strong> to open the program</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Wait for VSCode to load - you should see the welcome screen</li>
+</ol>
+<div class="success-box" style="background: #d1fae5; border-left: 4px solid #10b981; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+<h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; margin: 0;'>✓ Success Check</h4>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                    You should see a dark or light interface with a sidebar on the left and a large editing area 
+                    in the middle. If you see this, you're ready to start coding!
+                </p>
+</div>
+</div>
+<div class="content-section" style="background: white; border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+<h2 style='font-family: "Fredoka", sans-serif; font-size: 2rem; color: #3b82f6; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #f8fafc; margin-top: 0;'>Creating Your First Python File</h2>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Step 1: Create a New File</h3>
+<ol style="margin: 1rem 0 1rem 2rem;">
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Click <strong style="color: #3b82f6; font-weight: 600;">File → New File</strong> (or press <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>Ctrl + N</code>)</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Click <strong style="color: #3b82f6; font-weight: 600;">File → Save As...</strong> (or press <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>Ctrl + Shift + S</code>)</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Choose a location to save your file (like <strong style="color: #3b82f6; font-weight: 600;">Documents</strong> or <strong style="color: #3b82f6; font-weight: 600;">Desktop</strong>)</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Name your file with a <strong style="color: #3b82f6; font-weight: 600;">.py</strong> extension, for example: <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>hello.py</code></li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Click <strong style="color: #3b82f6; font-weight: 600;">Save</strong></li>
+</ol>
+<div class="info-box" style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.08), rgba(118, 75, 162, 0.08)); border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+<h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; margin: 0;'>📁 File Naming Rules</h4>
+<ul style="margin: 1rem 0 1rem 2rem;">
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Always end Python files with <strong style="color: #3b82f6; font-weight: 600;">.py</strong></li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Use lowercase letters and underscores (e.g., <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>my_program.py</code>)</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">No spaces in file names (use underscores instead)</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Make names descriptive (e.g., <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>calculator.py</code> instead of <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>prog1.py</code>)</li>
+</ul>
+</div>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Step 2: Write Your First Code</h3>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">Type the following code into your new file:</p>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'>print("Hello, Python!")</code></pre></div>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Step 3: Save Your File</h3>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">Press <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>Ctrl + S</code> or click <strong style="color: #3b82f6; font-weight: 600;">File → Save</strong></p>
+</div>
+<div class="content-section" style="background: white; border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+<h2 style='font-family: "Fredoka", sans-serif; font-size: 2rem; color: #3b82f6; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #f8fafc; margin-top: 0;'>Running Your Python Code</h2>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Method 1: Using the Run Button (Easiest)</h3>
+<ol style="margin: 1rem 0 1rem 2rem;">
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Look for the <strong style="color: #3b82f6; font-weight: 600;">▶ Run</strong> button in the top-right corner of VSCode</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Click it to run your code</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">The output will appear in the Terminal panel at the bottom of the screen</li>
+</ol>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Method 2: Using the Terminal</h3>
+<ol style="margin: 1rem 0 1rem 2rem;">
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Open the Terminal: <strong style="color: #3b82f6; font-weight: 600;">View → Terminal</strong> (or press <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>Ctrl + `</code>)</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Make sure you're in the right folder (where your Python file is saved)</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Type: <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>python hello.py</code> and press Enter</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">You should see your output appear!</li>
+</ol>
+<div class="success-box" style="background: #d1fae5; border-left: 4px solid #10b981; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+<h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; margin: 0;'>✓ Expected Output</h4>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">You should see: <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>Hello, Python!</code></p>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">If you see this message, congratulations! You've just run your first Python program!</p>
+</div>
+</div>
+<div class="content-section" style="background: white; border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+<h2 style='font-family: "Fredoka", sans-serif; font-size: 2rem; color: #3b82f6; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #f8fafc; margin-top: 0;'>Essential VSCode Features for Python</h2>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>1. Syntax Highlighting</h3>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                VSCode automatically colors your code to make it easier to read. Keywords like <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>print</code> 
+                appear in one color, strings in another, and so on.
+            </p>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>2. Auto-Complete</h3>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                As you type, VSCode suggests code completions. Press <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>Tab</code> or <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>Enter</code> to 
+                accept a suggestion.
+            </p>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>3. Error Detection</h3>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                If you make a mistake, VSCode will underline it with a red squiggly line. Hover over the line to 
+                see what the problem is.
+            </p>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>4. Indentation</h3>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                Python uses indentation (spaces at the start of lines) to organize code. VSCode automatically 
+                indents your code, but you can also press <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>Tab</code> to indent manually.
+            </p>
+<div class="info-box" style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.08), rgba(118, 75, 162, 0.08)); border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+<h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; margin: 0;'>⌨️ Useful Keyboard Shortcuts</h4>
+<ul style="margin: 1rem 0 1rem 2rem;">
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;"><code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>Ctrl + S</code> - Save file</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;"><code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>Ctrl + /</code> - Comment/uncomment line</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;"><code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>Ctrl + F</code> - Find text</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;"><code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>Ctrl + Z</code> - Undo</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;"><code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>Ctrl + Shift + P</code> - Command palette</li>
+</ul>
+</div>
+</div>
+<div class="content-section" style="background: white; border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+<h2 style='font-family: "Fredoka", sans-serif; font-size: 2rem; color: #3b82f6; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #f8fafc; margin-top: 0;'>Common Problems and Solutions</h2>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Problem: "Python is not recognized"</h3>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+<strong style="color: #3b82f6; font-weight: 600;">Solution:</strong> Python might not be installed correctly. Ask your teacher to check 
+                that Python is installed on your lab computer.
+            </p>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Problem: Code doesn't run when you click Run</h3>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+<strong style="color: #3b82f6; font-weight: 600;">Solution:</strong> Make sure you've saved your file with a <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>.py</code> extension. 
+                The Run button only works with saved Python files.
+            </p>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Problem: Can't see the Terminal</h3>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+<strong style="color: #3b82f6; font-weight: 600;">Solution:</strong> Go to <strong style="color: #3b82f6; font-weight: 600;">View → Terminal</strong> or press <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>Ctrl + `</code> 
+                (that's the backtick key, usually above Tab).
+            </p>
+<div class="warning-box" style="background: #fef3c7; border-left: 4px solid #f59e0b; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+<h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; margin: 0;'>⚠️ Remember</h4>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                    Always save your work regularly (Ctrl + S)! It's a good habit that will prevent you from 
+                    losing your code if something goes wrong.
+                </p>
+</div>
+</div>
+<div class="content-section" style="background: white; border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+<h2 style='font-family: "Fredoka", sans-serif; font-size: 2rem; color: #3b82f6; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #f8fafc; margin-top: 0;'>Practice Exercise</h2>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">Try this to make sure you understand the basics:</p>
+<ol style="margin: 1rem 0 1rem 2rem;">
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Create a new Python file called <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>practice.py</code></li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Write code to print your name</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Save the file</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Run it and check that your name appears</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Add another line to print your favorite subject</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Save and run again</li>
+</ol>
+<div class="success-box" style="background: #d1fae5; border-left: 4px solid #10b981; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+<h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; margin: 0;'>✓ Challenge</h4>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                    Can you make your program print 5 different lines, each with different information about 
+                    yourself? Try it!
+                </p>
+</div>
+</div>
+<div class="nav-buttons" style="display: flex; justify-content: space-between; margin-top: 3rem; gap: 1rem;">
+<a class="btn btn-secondary" href="/pages/00-homepage-canvas" style='display: inline-block; padding: 1rem 2rem; background: linear-gradient(135deg, #3b82f6, #8b5cf6); color: white; text-decoration: none; border-radius: 12px; font-family: "Fredoka", sans-serif; font-weight: 600; box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);display: inline-block; padding: 1rem 2rem; background: white; color: #3b82f6; border: 2px solid #3b82f6; text-decoration: none; border-radius: 12px; font-family: "Fredoka", sans-serif; font-weight: 600;display: inline-block; padding: 1rem 2rem; background: white; color: #3b82f6; border: 2px solid #3b82f6; text-decoration: none; border-radius: 12px; font-family: "Fredoka", sans-serif; font-weight: 600;'>← Back to Home</a>
+<a class="btn" href="/pages/02-output-qlearn-canvas" style='display: inline-block; padding: 1rem 2rem; background: linear-gradient(135deg, #3b82f6, #8b5cf6); color: white; text-decoration: none; border-radius: 12px; font-family: "Fredoka", sans-serif; font-weight: 600; box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);'>Next: Output →</a>
+</div>
+</div>
+<footer>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">Year 9 Digital Technologies | Python Learning Hub</p>
+</footer>
+
+</div>

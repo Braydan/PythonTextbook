@@ -1,0 +1,429 @@
+<div style="font-family: "Poppins", sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #1e293b; line-height: 1.6; min-height: 100vh; padding: 2rem; margin: 0;">
+
+<nav class="nav-bar" style="background: white; padding: 1rem 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); position: sticky; top: 0; z-index: 100;">
+<div class="nav-content" style="max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+<a class="nav-home" href="/pages/00-homepage-canvas" style='font-family: "Fredoka", sans-serif; font-size: 1.3rem; color: #3b82f6; text-decoration: none; font-weight: 700;'>🐍 Python Learning Hub</a>
+<span style="color: var(--text-light);">Lesson 01</span>
+</div>
+</nav>
+<div class="container" style="max-width: 1000px; margin: 0 auto; padding: 2rem;">
+<div class="lesson-header" style="background: white; border-radius: 20px; padding: 3rem 2.5rem; margin-bottom: 2rem; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12); position: relative; overflow: hidden; border-top: 6px solid #3b82f6;">
+<div class="lesson-number" style='display: inline-block; background: linear-gradient(135deg, #3b82f6, #8b5cf6); color: white; padding: 0.5rem 1.5rem; border-radius: 12px; font-family: "Fredoka", sans-serif; font-weight: 700; margin-bottom: 1rem;'>Lesson 02</div>
+<p class="lesson-intro" style="font-size: 1.2rem; color: #64748b; line-height: 1.8; margin-bottom: 1rem;">
+                Learn how to display information to users using the print() function.
+            </p>
+</div>
+<div class="content-section" style="background: white; border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+<h2 style='font-family: "Fredoka", sans-serif; font-size: 2rem; color: #3b82f6; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #f8fafc; margin-top: 0;'>What is Output?</h2>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                Output is how your program communicates with the user by displaying information on the screen. 
+                In Python, the most common way to produce output is using the <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>print()</code> function.
+            </p>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                Think of <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>print()</code> as your program's voice - it's how your code "speaks" to show 
+                results, messages, or any information you want the user to see.
+            </p>
+<div class="info-box" style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.08), rgba(118, 75, 162, 0.08)); border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+<h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; margin: 0;'>💡 Why is Output Important?</h4>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                    Without output, your programs would run silently with no way to show results! Output lets you 
+                    display answers, debug your code, and create interactive experiences for users.
+                </p>
+</div>
+</div>
+<div class="content-section" style="background: white; border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+<h2 style='font-family: "Fredoka", sans-serif; font-size: 2rem; color: #3b82f6; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #f8fafc; margin-top: 0;'>The print() Function</h2>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Basic Usage</h3>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">The simplest way to use <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>print()</code> is to display text (called a string) in quotes:</p>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'>print("Hello, World!")</code></pre></div>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;"><strong style="color: #3b82f6; font-weight: 600;">Output:</strong></p>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'>Hello, World!</code></pre></div>
+<div class="info-box" style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.08), rgba(118, 75, 162, 0.08)); border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+<h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; margin: 0;'>📝 String Rules</h4>
+<ul style="margin: 1rem 0 1rem 2rem;">
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Text strings must be enclosed in quotes: either <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>"double quotes"</code> or <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>'single quotes'</code></li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Both work the same way - just be consistent!</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">If you forget the quotes, Python will think it's a variable name</li>
+</ul>
+</div>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Printing Multiple Lines</h3>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">You can use multiple <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>print()</code> statements to display several lines:</p>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'>print("Welcome to Python!")
+print("This is my first program")
+print("Let's learn to code!")</code></pre></div>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;"><strong style="color: #3b82f6; font-weight: 600;">Output:</strong></p>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'>Welcome to Python!
+This is my first program
+Let's learn to code!</code></pre></div>
+</div>
+<div class="content-section" style="background: white; border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+<h2 style='font-family: "Fredoka", sans-serif; font-size: 2rem; color: #3b82f6; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #f8fafc; margin-top: 0;'>Printing Different Types of Data</h2>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Numbers</h3>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">You can print numbers without quotes:</p>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'>print(42)
+print(3.14159)
+print(-17)</code></pre></div>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;"><strong style="color: #3b82f6; font-weight: 600;">Output:</strong></p>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'>42
+3.14159
+-17</code></pre></div>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Mathematical Expressions</h3>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">Python will calculate the result and print it:</p>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'>print(5 + 3)
+print(10 * 2)
+print(100 / 4)</code></pre></div>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;"><strong style="color: #3b82f6; font-weight: 600;">Output:</strong></p>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'>8
+20
+25.0</code></pre></div>
+<div class="success-box" style="background: #d1fae5; border-left: 4px solid #10b981; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+<h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; margin: 0;'>✓ Try It Yourself</h4>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                    Open VSCode and create a new file called <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>output_practice.py</code>. Try printing your 
+                    name, age, and the result of your birth year plus your age. Run the program to see the output!
+                </p>
+</div>
+</div>
+<div class="content-section" style="background: white; border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+<h2 style='font-family: "Fredoka", sans-serif; font-size: 2rem; color: #3b82f6; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #f8fafc; margin-top: 0;'>Printing Multiple Items</h2>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Separating with Commas</h3>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">You can print multiple items in one <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>print()</code> statement by separating them with commas:</p>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'>print("My name is", "Sarah")
+print("I am", 14, "years old")
+print("Score:", 95, "out of", 100)</code></pre></div>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;"><strong style="color: #3b82f6; font-weight: 600;">Output:</strong></p>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'>My name is Sarah
+I am 14 years old
+Score: 95 out of 100</code></pre></div>
+<div class="info-box" style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.08), rgba(118, 75, 162, 0.08)); border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+<h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; margin: 0;'>💡 Automatic Spacing</h4>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                    When you separate items with commas, Python automatically adds a space between them. 
+                    This is very convenient for creating readable output!
+                </p>
+</div>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Mixing Text and Numbers</h3>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">You can mix strings and numbers in the same <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>print()</code> statement:</p>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'>print("The answer is", 42)
+print("Temperature:", 25, "degrees")
+print("Price: $", 19.99)</code></pre></div>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;"><strong style="color: #3b82f6; font-weight: 600;">Output:</strong></p>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'>The answer is 42
+Temperature: 25 degrees
+Price: $ 19.99</code></pre></div>
+</div>
+<div class="content-section" style="background: white; border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+<h2 style='font-family: "Fredoka", sans-serif; font-size: 2rem; color: #3b82f6; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #f8fafc; margin-top: 0;'>Changing the Separator and Ending</h2>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Custom Separator (sep)</h3>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">By default, items are separated by a space. You can change this using the <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>sep</code> parameter:</p>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'>print("Python", "is", "awesome")
+print("Python", "is", "awesome", sep="-")
+print("2025", "01", "24", sep="/")</code></pre></div>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;"><strong style="color: #3b82f6; font-weight: 600;">Output:</strong></p>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'>Python is awesome
+Python-is-awesome
+2025/01/24</code></pre></div>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Custom Ending (end)</h3>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">By default, <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>print()</code> adds a new line at the end. You can change this with the <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>end</code> parameter:</p>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'>print("Hello", end=" ")
+print("World!")
+
+print("Loading", end="...")
+print("Done!")</code></pre></div>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;"><strong style="color: #3b82f6; font-weight: 600;">Output:</strong></p>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'>Hello World!
+Loading...Done!</code></pre></div>
+<div class="warning-box" style="background: #fef3c7; border-left: 4px solid #f59e0b; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+<h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; margin: 0;'>⚠️ Be Careful with end=""</h4>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                    If you use <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>end=""</code>, the next print will continue on the same line. This is useful 
+                    for creating custom output, but make sure it's what you want!
+                </p>
+</div>
+</div>
+<div class="content-section" style="background: white; border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+<h2 style='font-family: "Fredoka", sans-serif; font-size: 2rem; color: #3b82f6; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #f8fafc; margin-top: 0;'>Escape Characters</h2>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                Escape characters are special sequences that start with a backslash (<code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>\</code>) and let you 
+                include special formatting in your strings.
+            </p>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Common Escape Characters</h3>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'># New line
+print("Line 1\nLine 2\nLine 3")
+
+# Tab
+print("Name:\tJohn")
+print("Age:\t15")
+
+# Quotes inside strings
+print("She said, \"Hello!\"")
+print('It\'s a beautiful day')
+
+# Backslash itself
+print("Path: C:\\Users\\Student")</code></pre></div>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;"><strong style="color: #3b82f6; font-weight: 600;">Output:</strong></p>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'>Line 1
+Line 2
+Line 3
+Name:	John
+Age:	15
+She said, "Hello!"
+It's a beautiful day
+Path: C:\Users\Student</code></pre></div>
+<div class="info-box" style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.08), rgba(118, 75, 162, 0.08)); border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+<h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; margin: 0;'>📋 Escape Character Reference</h4>
+<ul style="margin: 1rem 0 1rem 2rem;">
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;"><code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>\n</code> - New line (moves to next line)</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;"><code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>\t</code> - Tab (adds horizontal spacing)</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;"><code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>\"</code> - Double quote character</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;"><code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>\'</code> - Single quote character</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;"><code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>\\</code> - Backslash character</li>
+</ul>
+</div>
+</div>
+<div class="content-section" style="background: white; border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+<h2 style='font-family: "Fredoka", sans-serif; font-size: 2rem; color: #3b82f6; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #f8fafc; margin-top: 0;'>Printing Empty Lines</h2>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">You can print blank lines to make your output more readable:</p>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'>print("Welcome to my program")
+print()  # Empty line
+print("This is much easier to read")
+print()  # Empty line
+print("Because it has spacing!")</code></pre></div>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;"><strong style="color: #3b82f6; font-weight: 600;">Output:</strong></p>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'>Welcome to my program
+
+This is much easier to read
+
+Because it has spacing!</code></pre></div>
+</div>
+<div class="content-section" style="background: white; border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+<h2 style='font-family: "Fredoka", sans-serif; font-size: 2rem; color: #3b82f6; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #f8fafc; margin-top: 0;'>Common Mistakes and How to Fix Them</h2>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Mistake 1: Forgetting Quotes Around Text</h3>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'># ❌ Wrong
+print(Hello)  # Python thinks Hello is a variable!
+
+# ✅ Correct
+print("Hello")</code></pre></div>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Mistake 2: Mismatched Quotes</h3>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'># ❌ Wrong
+print("Hello World')  # Started with " but ended with '
+
+# ✅ Correct
+print("Hello World")</code></pre></div>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Mistake 3: Forgetting Parentheses</h3>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'># ❌ Wrong
+print "Hello"  # Missing parentheses
+
+# ✅ Correct
+print("Hello")</code></pre></div>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Mistake 4: Trying to Add Text and Numbers with +</h3>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'># ❌ Wrong
+print("Age: " + 14)  # Can't add string and number directly
+
+# ✅ Correct - Use a comma instead
+print("Age:", 14)
+
+# ✅ Also Correct - Convert number to string
+print("Age: " + str(14))</code></pre></div>
+<div class="warning-box" style="background: #fef3c7; border-left: 4px solid #f59e0b; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+<h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; margin: 0;'>⚠️ Remember</h4>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                    When you see an error message about <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>print</code>, check these common mistakes first:
+                    quotes, parentheses, and mixing text with numbers incorrectly.
+                </p>
+</div>
+</div>
+<div class="content-section" style="background: white; border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+<h2 style='font-family: "Fredoka", sans-serif; font-size: 2rem; color: #3b82f6; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #f8fafc; margin-top: 0;'>Practice Exercises</h2>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Exercise 1: Basic Output</h3>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">Create a program that prints:</p>
+<ul style="margin: 1rem 0 1rem 2rem;">
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Your full name</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Your favorite subject</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Your favorite hobby</li>
+</ul>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">Each should be on a separate line.</p>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Exercise 2: Formatted Information</h3>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">Create a program that displays your weekly schedule in a neat format using tabs (<code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>\t</code>):</p>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'># Example:
+Day:		Subject:
+Monday		Maths
+Tuesday		English
+Wednesday	Science</code></pre></div>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Exercise 3: Calculator Display</h3>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">Write a program that displays the results of these calculations:</p>
+<ul style="margin: 1rem 0 1rem 2rem;">
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">25 + 17</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">100 - 37</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">12 * 8</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">144 / 12</li>
+</ul>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">Make sure each calculation is labeled (e.g., "25 + 17 = 42")</p>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Exercise 4: Creative Challenge</h3>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">Create a program that draws a simple picture or pattern using only <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>print()</code> statements and text characters. For example:</p>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'>    *
+   ***
+  *****
+ *******
+*********</code></pre></div>
+<div class="success-box" style="background: #d1fae5; border-left: 4px solid #10b981; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+<h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; margin: 0;'>✓ Challenge Yourself!</h4>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                    Try creating a program that prints your name in large letters made of text characters, 
+                    or design a simple text-based greeting card!
+                </p>
+</div>
+</div>
+<div class="content-section" style="background: white; border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+<h2 style='font-family: "Fredoka", sans-serif; font-size: 2rem; color: #3b82f6; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #f8fafc; margin-top: 0;'>Key Takeaways</h2>
+<ul style="margin: 1rem 0 1rem 2rem;">
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;"><code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>print()</code> is used to display output to the screen</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Text strings must be in quotes: <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>"like this"</code> or <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>'like this'</code></li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Numbers don't need quotes and can be used in calculations</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Use commas to print multiple items with automatic spacing</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Escape characters like <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>\n</code> and <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>\t</code> add special formatting</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">You can customize output with <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>sep</code> and <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>end</code> parameters</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Empty <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>print()</code> creates blank lines for better readability</li>
+</ul>
+<div class="info-box" style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.08), rgba(118, 75, 162, 0.08)); border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+<h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; margin: 0;'>🎯 What's Next?</h4>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                    Now that you know how to output information, the next step is learning how to get input 
+                    from users! This will let you create interactive programs that respond to user choices.
+                </p>
+</div>
+</div>
+<div class="content-section" style="background: white; border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+<h2 style='font-family: "Fredoka", sans-serif; font-size: 2rem; color: #3b82f6; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #f8fafc; margin-top: 0;'>🏆 CBMAZE Challenge</h2>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                This challenge will test everything you've learned about VSCode and the <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>print()</code> function. 
+                You'll work with a piece of code that creates an interesting visual pattern!
+            </p>
+<div class="warning-box" style="background: #fef3c7; border-left: 4px solid #f59e0b; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+<h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; margin: 0;'>⚠️ IMPORTANT: File Naming</h4>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                    You MUST name your file <strong style="color: #3b82f6; font-weight: 600;"><code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>CBMAZE.py</code></strong> (with the .py extension). 
+                    Without the <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>.py</code> extension, VSCode won't recognize it as a Python file and the code won't run properly!
+                </p>
+</div>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>The Code</h3>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">Here's the code you'll be working with:</p>
+<div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'><pre style='margin: 0; font-family: "IBM Plex Mono", "Courier New", monospace; white-space: pre;'><code style='font-family: "IBM Plex Mono", "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'>import random
+import time
+
+def create_maze(width, height):
+    for _ in range(height):
+        line = ""
+        for _ in range(width):
+            line += random.choice(["█", "░"])
+        print(line)
+        time.sleep(0.05)
+
+create_maze(50, 20)</code></pre></div>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Challenge 1: Get It Running in VSCode</h3>
+<div class="info-box" style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.08), rgba(118, 75, 162, 0.08)); border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+<h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; margin: 0;'>📋 Step-by-Step Instructions</h4>
+<ol style="margin: 1rem 0 1rem 2rem;">
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Open VSCode on your lab PC</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Create a new file: <strong style="color: #3b82f6; font-weight: 600;">File → New File</strong> (or press <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>Ctrl + N</code>)</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Save the file as <strong style="color: #3b82f6; font-weight: 600;"><code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>CBMAZE.py</code></strong> - remember the <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>.py</code> extension!</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Copy the code above and paste it into your file</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Save the file: <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>Ctrl + S</code></li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Run the code: Click the <strong style="color: #3b82f6; font-weight: 600;">▶ Run</strong> button or press <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>F5</code></li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Watch the pattern appear in the Terminal window!</li>
+</ol>
+</div>
+<div class="success-box" style="background: #d1fae5; border-left: 4px solid #10b981; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+<h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; margin: 0;'>✓ Success Check</h4>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                    If you see a pattern of dark blocks (█) and light blocks (░) appearing line by line in the 
+                    Terminal, congratulations! You've successfully run the code!
+                </p>
+</div>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Challenge 2: Make It Fill Your Screen</h3>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                The code currently creates a pattern that is 50 characters wide and 20 lines tall. Your challenge 
+                is to modify the numbers to make the pattern fill your entire screen!
+            </p>
+<div class="info-box" style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.08), rgba(118, 75, 162, 0.08)); border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+<h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; margin: 0;'>💡 Hints</h4>
+<ul style="margin: 1rem 0 1rem 2rem;">
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Look at the last line: <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>create_maze(50, 20)</code></li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">The first number (50) controls the <strong style="color: #3b82f6; font-weight: 600;">width</strong></li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">The second number (20) controls the <strong style="color: #3b82f6; font-weight: 600;">height</strong></li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Try different numbers and run the code to see what happens</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">A typical screen might need width around 100-150 and height around 30-40</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Experiment until it looks perfect on YOUR screen!</li>
+</ul>
+</div>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Challenge 3: Annotate the Code in OneNote</h3>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                Now that you understand what the code does, it's time to explain it! This challenge will help you 
+                develop the important skill of reading and understanding code.
+            </p>
+<div class="info-box" style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.08), rgba(118, 75, 162, 0.08)); border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+<h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; margin: 0;'>📱 OneNote Annotation Instructions</h4>
+<ol style="margin: 1rem 0 1rem 2rem;">
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Copy the CBMAZE code from VSCode (select all the code and press <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>Ctrl + C</code>)</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Open <strong style="color: #3b82f6; font-weight: 600;">OneNote Online</strong> in your web browser on the lab PC</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Create a new page titled "CBMAZE Code Analysis"</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Paste the code into your OneNote page (press <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>Ctrl + V</code>)</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">The page will automatically sync to the cloud</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Open the <strong style="color: #3b82f6; font-weight: 600;">OneNote app on your iPad</strong> to view the same page</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Using your Apple Pencil, add annotations to explain what each line does</li>
+</ol>
+</div>
+<div class="info-box" style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.08), rgba(118, 75, 162, 0.08)); border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+<h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; margin: 0;'>💡 OneNote Tip</h4>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                    Remember: Any changes you make in OneNote Online on your PC will automatically sync to your 
+                    iPad, and vice versa! This means you can view your notes on any device.
+                </p>
+</div>
+<div class="success-box" style="background: #d1fae5; border-left: 4px solid #10b981; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+<h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; margin: 0;'>✓ What to Annotate</h4>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">Your annotations should explain:</p>
+<ul style="margin: 1rem 0 1rem 2rem;">
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">What <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>import random</code> and <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>import time</code> do</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">What <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>def create_maze(width, height):</code> means</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">What the <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>for _ in range(height):</code> loop does</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">How <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>random.choice(["█", "░"])</code> works</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Why <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>time.sleep(0.05)</code> is there</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">What <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>create_maze(50, 20)</code> does at the end</li>
+</ul>
+</div>
+<div class="warning-box" style="background: #fef3c7; border-left: 4px solid #f59e0b; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+<h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; margin: 0;'>🤔 Think About It</h4>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                    Before you look up the answers, try to figure out what each part does by reading the code 
+                    carefully. What patterns do you notice? What do you think <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>random.choice</code> might mean? 
+                    What happens in a loop? Making educated guesses is an important programming skill!
+                </p>
+</div>
+<h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Reflection Questions</h3>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">Once you've completed all three challenges, answer these questions in your notes:</p>
+<ol style="margin: 1rem 0 1rem 2rem;">
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">How did you figure out what width and height values to use for your screen?</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">What happens if you change <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>time.sleep(0.05)</code> to a bigger number like 0.2?</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">What happens if you change it to a smaller number like 0.01?</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Can you explain in your own words what this program does?</li>
+<li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">What other characters could you use instead of "█" and "░"?</li>
+</ol>
+<div class="success-box" style="background: #d1fae5; border-left: 4px solid #10b981; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+<h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; margin: 0;'>🎉 Challenge Complete!</h4>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                    Once you've successfully run the code, adjusted it for your screen, and annotated it on your iPad, 
+                    show your teacher for verification. Well done on completing your first real Python program analysis!
+                </p>
+</div>
+</div>
+<div class="nav-buttons" style="display: flex; justify-content: space-between; margin-top: 3rem; gap: 1rem;">
+<a class="btn btn-secondary" href="/pages/01-vscodesetup-qlearn-canvas" style='display: inline-block; padding: 1rem 2rem; background: linear-gradient(135deg, #3b82f6, #8b5cf6); color: white; text-decoration: none; border-radius: 12px; font-family: "Fredoka", sans-serif; font-weight: 600; box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);display: inline-block; padding: 1rem 2rem; background: white; color: #3b82f6; border: 2px solid #3b82f6; text-decoration: none; border-radius: 12px; font-family: "Fredoka", sans-serif; font-weight: 600;display: inline-block; padding: 1rem 2rem; background: white; color: #3b82f6; border: 2px solid #3b82f6; text-decoration: none; border-radius: 12px; font-family: "Fredoka", sans-serif; font-weight: 600;'>← Previous: VSCode</a>
+<a class="btn" href="/pages/03-input-qlearn-canvas" style='display: inline-block; padding: 1rem 2rem; background: linear-gradient(135deg, #3b82f6, #8b5cf6); color: white; text-decoration: none; border-radius: 12px; font-family: "Fredoka", sans-serif; font-weight: 600; box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);'>Next: Input →</a>
+</div>
+</div>
+<footer>
+<p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">Year 9 Digital Technologies | Python Learning Hub</p>
+</footer>
+
+</div>
