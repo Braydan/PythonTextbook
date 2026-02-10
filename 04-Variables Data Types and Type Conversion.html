@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables, Data Types and Type Conversion - Python Learning Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=IBM+Plex+Mono:wght@400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 2rem; margin: 0;">
+
+<nav class="nav-bar" style="background: white; padding: 1rem 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); margin-bottom: 2rem;">
+    <div class="nav-content" style="max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+        <a class="nav-home" href="00-HomePage-Canvas.html" style='font-family: "Fredoka", sans-serif; font-size: 1.3rem; color: #3b82f6; text-decoration: none; font-weight: 700;'>🐍 Python Learning Hub</a>
+        <span style="color: #64748b;">Chapter 04</span>
+    </div>
+</nav>
+
+<div class="container" style="max-width: 1000px; margin: 0 auto; padding: 0;">
+
+    <!-- Lesson Header -->
+    <div class="lesson-header" style="background: white; border-radius: 20px; padding: 3rem 2.5rem; margin-bottom: 2rem; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12); border-top: 6px solid #3b82f6;">
+        <div class="lesson-number" style='display: inline-block; background: linear-gradient(135deg, #3b82f6, #8b5cf6); color: white; padding: 0.5rem 1.5rem; border-radius: 12px; font-family: "Fredoka", sans-serif; font-weight: 700; margin-bottom: 1rem; font-size: 1rem;'>Chapter 04</div>
+        <p class="lesson-intro" style="font-size: 1.2rem; color: #64748b; line-height: 1.8; margin-bottom: 1rem; margin-top: 0;">
+            Master the building blocks of Python! Learn how to store information in variables, understand different types of data, and convert between them like a pro.
+        </p>
+    </div>
+
+    <!-- What Are Variables? -->
+    <div class="content-section" style="background: white; border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+        <h2 style='font-family: "Fredoka", sans-serif; font-size: 2rem; color: #3b82f6; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #f8fafc; margin-top: 0;'>What Are Variables?</h2>
+        
+        <p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+            Think of a variable as a <strong style="color: #3b82f6; font-weight: 600;">labeled box</strong> where you can store information. You give the box a name, and Python remembers what's inside so you can use it later!
+        </p>
+
+        <div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'>
+            <pre style='margin: 0; font-family: "Courier New", monospace; white-space: pre; color: #e2e8f0;'><code style='font-family: "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'># Creating variables
+name = "Alex"
+age = 15
+score = 95.5
+is_student = True
+
+print(name)        # Prints: Alex
+print(age)         # Prints: 15
+print(score)       # Prints: 95.5
+print(is_student)  # Prints: True</code></pre>
+        </div>
+
+        <h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Variable Naming Rules</h3>
+
+        <ul style="margin: 1rem 0 1rem 2rem; padding-left: 0;">
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;"><strong style="color: #3b82f6; font-weight: 600;">Must start with a letter or underscore:</strong> <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>name</code>, <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>_score</code> ✓</li>
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;"><strong style="color: #3b82f6; font-weight: 600;">Can contain letters, numbers, underscores:</strong> <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>player1</code>, <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>high_score</code> ✓</li>
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;"><strong style="color: #3b82f6; font-weight: 600;">Cannot start with a number:</strong> <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>1player</code> ❌</li>
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;"><strong style="color: #3b82f6; font-weight: 600;">Cannot contain spaces:</strong> <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>my name</code> ❌ (use <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>my_name</code> ✓)</li>
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;"><strong style="color: #3b82f6; font-weight: 600;">Case-sensitive:</strong> <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>score</code> and <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>Score</code> are different!</li>
+        </ul>
+
+        <div class="info-box" style="background: #e0f2fe; border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+            <h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; color: #3b82f6; margin: 1rem 0 0.5rem;'>💡 Good Naming Practice</h4>
+            <p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                Use descriptive names that tell you what's inside! <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>player_health</code> is much better than <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>h</code>. Your future self will thank you!
+            </p>
+        </div>
+    </div>
+
+    <!-- Data Types -->
+    <div class="content-section" style="background: white; border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+        <h2 style='font-family: "Fredoka", sans-serif; font-size: 2rem; color: #3b82f6; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #f8fafc; margin-top: 0;'>Data Types in Python</h2>
+        
+        <p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+            Python has different <strong style="color: #3b82f6; font-weight: 600;">types of data</strong>, just like you have different types of things in real life. Here are the four main types you'll use most:
+        </p>
+
+        <h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>1. Strings (str) - Text</h3>
+        
+        <p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+            Strings are text - anything in quotes! Use them for names, messages, or any words.
+        </p>
+
+        <div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'>
+            <pre style='margin: 0; font-family: "Courier New", monospace; white-space: pre; color: #e2e8f0;'><code style='font-family: "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'># Strings - always in quotes
+username = "gamer123"
+message = "Hello, world!"
+favorite_game = 'Minecraft'  # Single or double quotes work!
+
+print(type(username))  # Prints: <class 'str'></code></pre>
+        </div>
+
+        <h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>2. Integers (int) - Whole Numbers</h3>
+        
+        <p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+            Integers are whole numbers with no decimal points. Use them for counting, ages, scores, etc.
+        </p>
+
+        <div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'>
+            <pre style='margin: 0; font-family: "Courier New", monospace; white-space: pre; color: #e2e8f0;'><code style='font-family: "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'># Integers - whole numbers, no quotes
+age = 15
+score = 1000
+lives = 3
+year = 2026
+
+print(type(age))  # Prints: <class 'int'></code></pre>
+        </div>
+
+        <h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>3. Floats (float) - Decimal Numbers</h3>
+        
+        <p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+            Floats are numbers with decimal points. Use them for prices, measurements, percentages, etc.
+        </p>
+
+        <div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'>
+            <pre style='margin: 0; font-family: "Courier New", monospace; white-space: pre; color: #e2e8f0;'><code style='font-family: "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'># Floats - numbers with decimals
+price = 19.99
+height = 1.75
+temperature = 23.5
+pi = 3.14159
+
+print(type(price))  # Prints: <class 'float'></code></pre>
+        </div>
+
+        <h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>4. Booleans (bool) - True or False</h3>
+        
+        <p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+            Booleans can only be <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>True</code> or <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>False</code>. Use them for yes/no situations!
+        </p>
+
+        <div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'>
+            <pre style='margin: 0; font-family: "Courier New", monospace; white-space: pre; color: #e2e8f0;'><code style='font-family: "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'># Booleans - True or False (no quotes!)
+is_student = True
+game_over = False
+has_won = True
+
+print(type(is_student))  # Prints: <class 'bool'></code></pre>
+        </div>
+
+        <div class="success-box" style="background: #d1fae5; border-left: 4px solid #10b981; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+            <h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; color: #3b82f6; margin: 1rem 0 0.5rem;'>✓ Using type()</h4>
+            <p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                Use the <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>type()</code> function to check what type a variable is. Super useful when debugging!
+            </p>
+        </div>
+    </div>
+
+    <!-- Type Conversion -->
+    <div class="content-section" style="background: white; border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+        <h2 style='font-family: "Fredoka", sans-serif; font-size: 2rem; color: #3b82f6; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #f8fafc; margin-top: 0;'>Type Conversion</h2>
+        
+        <p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+            Sometimes you need to <strong style="color: #3b82f6; font-weight: 600;">convert</strong> data from one type to another. Python makes this easy with built-in functions!
+        </p>
+
+        <h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Converting to Integer: int()</h3>
+
+        <div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'>
+            <pre style='margin: 0; font-family: "Courier New", monospace; white-space: pre; color: #e2e8f0;'><code style='font-family: "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'># Converting to integer
+text_number = "25"
+real_number = int(text_number)
+print(real_number + 5)  # Prints: 30
+
+# From float to int (loses decimal!)
+price = 19.99
+whole_price = int(price)
+print(whole_price)  # Prints: 19 (not 20!)</code></pre>
+        </div>
+
+        <h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Converting to Float: float()</h3>
+
+        <div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'>
+            <pre style='margin: 0; font-family: "Courier New", monospace; white-space: pre; color: #e2e8f0;'><code style='font-family: "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'># Converting to float
+text_price = "19.99"
+real_price = float(text_price)
+print(real_price * 2)  # Prints: 39.98
+
+# From int to float
+age = 15
+age_float = float(age)
+print(age_float)  # Prints: 15.0</code></pre>
+        </div>
+
+        <h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Converting to String: str()</h3>
+
+        <div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'>
+            <pre style='margin: 0; font-family: "Courier New", monospace; white-space: pre; color: #e2e8f0;'><code style='font-family: "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'># Converting to string
+age = 15
+age_text = str(age)
+print("I am " + age_text + " years old")  # Works!
+
+# Can't add number to string without converting
+score = 100
+# print("Score: " + score)  # ERROR!
+print("Score: " + str(score))  # Works!</code></pre>
+        </div>
+
+        <div class="warning-box" style="background: #fef3c7; border-left: 4px solid #f59e0b; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+            <h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; color: #3b82f6; margin: 1rem 0 0.5rem;'>⚠️ Watch Out!</h4>
+            <p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                <strong style="color: #3b82f6; font-weight: 600;">int()</strong> cuts off decimals, it doesn't round!<br>
+                <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>int(9.9)</code> gives you <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>9</code>, not <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>10</code>!
+            </p>
+        </div>
+    </div>
+
+    <!-- Why Type Conversion Matters -->
+    <div class="content-section" style="background: white; border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+        <h2 style='font-family: "Fredoka", sans-serif; font-size: 2rem; color: #3b82f6; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #f8fafc; margin-top: 0;'>Why Type Conversion Matters</h2>
+        
+        <h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Example: User Input</h3>
+        
+        <p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+            Remember: <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>input()</code> always returns a string! You must convert it to do math.
+        </p>
+
+        <div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'>
+            <pre style='margin: 0; font-family: "Courier New", monospace; white-space: pre; color: #e2e8f0;'><code style='font-family: "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'># Problem: Wrong types!
+birth_year = input("What year were you born? ")
+age = 2026 - birth_year  # ERROR! Can't subtract string
+
+# Solution: Convert to int!
+birth_year = input("What year were you born? ")
+birth_year = int(birth_year)  # Convert to integer
+age = 2026 - birth_year  # Now it works!
+print("You are", age, "years old")</code></pre>
+        </div>
+
+        <h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Example: Building Messages</h3>
+
+        <div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'>
+            <pre style='margin: 0; font-family: "Courier New", monospace; white-space: pre; color: #e2e8f0;'><code style='font-family: "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'># Problem: Can't add string and number
+score = 95
+# message = "Your score is " + score  # ERROR!
+
+# Solution: Convert number to string!
+score = 95
+message = "Your score is " + str(score)
+print(message)  # Prints: Your score is 95
+
+# Or use commas in print (no conversion needed!)
+print("Your score is", score)  # Also works!</code></pre>
+        </div>
+
+        <div class="info-box" style="background: #e0f2fe; border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+            <h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; color: #3b82f6; margin: 1rem 0 0.5rem;'>💡 Quick Reference</h4>
+            <p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>int()</code> → Converts to whole number<br>
+                <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>float()</code> → Converts to decimal number<br>
+                <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>str()</code> → Converts to text<br>
+                <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>type()</code> → Tells you what type something is
+            </p>
+        </div>
+    </div>
+
+    <!-- Common Mistakes -->
+    <div class="content-section" style="background: white; border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+        <h2 style='font-family: "Fredoka", sans-serif; font-size: 2rem; color: #3b82f6; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #f8fafc; margin-top: 0;'>Common Mistakes to Avoid</h2>
+        
+        <h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Mistake 1: Forgetting Quotes for Strings</h3>
+
+        <div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'>
+            <pre style='margin: 0; font-family: "Courier New", monospace; white-space: pre; color: #e2e8f0;'><code style='font-family: "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'># ❌ Wrong - no quotes
+name = Alex  # ERROR: Python thinks Alex is a variable
+
+# ✅ Correct - with quotes
+name = "Alex"  # This is a string!</code></pre>
+        </div>
+
+        <h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Mistake 2: Quotes on Numbers You Want to Use in Math</h3>
+
+        <div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'>
+            <pre style='margin: 0; font-family: "Courier New", monospace; white-space: pre; color: #e2e8f0;'><code style='font-family: "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'># ❌ Wrong - this is a string, not a number!
+age = "15"
+next_year = age + 1  # ERROR! Can't add 1 to text
+
+# ✅ Correct - no quotes for numbers
+age = 15
+next_year = age + 1  # Works! Equals 16</code></pre>
+        </div>
+
+        <h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Mistake 3: Mixing Types Without Converting</h3>
+
+        <div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'>
+            <pre style='margin: 0; font-family: "Courier New", monospace; white-space: pre; color: #e2e8f0;'><code style='font-family: "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'># ❌ Wrong - mixing string and number
+score = 100
+message = "Score: " + score  # ERROR!
+
+# ✅ Correct - convert to same type
+score = 100
+message = "Score: " + str(score)  # Works!
+
+# ✅ Or use commas in print
+print("Score:", score)  # Works too!</code></pre>
+        </div>
+
+        <h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Mistake 4: Forgetting to Convert Input</h3>
+
+        <div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'>
+            <pre style='margin: 0; font-family: "Courier New", monospace; white-space: pre; color: #e2e8f0;'><code style='font-family: "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'># ❌ Wrong - input is always a string!
+num1 = input("Enter a number: ")
+num2 = input("Enter another: ")
+total = num1 + num2  # This joins text, doesn't add!
+
+# ✅ Correct - convert to numbers
+num1 = int(input("Enter a number: "))
+num2 = int(input("Enter another: "))
+total = num1 + num2  # Now this adds numbers!</code></pre>
+        </div>
+
+        <h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Mistake 5: Wrong Capitalization on Booleans</h3>
+
+        <div class="code-block" style='background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; font-family: "Courier New", monospace; font-size: 0.95rem; overflow-x: auto; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);'>
+            <pre style='margin: 0; font-family: "Courier New", monospace; white-space: pre; color: #e2e8f0;'><code style='font-family: "Courier New", monospace; background: transparent; color: #e2e8f0; padding: 0;'># ❌ Wrong - lowercase won't work
+is_ready = true  # ERROR! Python doesn't know "true"
+is_done = false  # ERROR! Python doesn't know "false"
+
+# ✅ Correct - capital T and F
+is_ready = True
+is_done = False</code></pre>
+        </div>
+    </div>
+
+    <!-- Practice Exercises -->
+    <div class="content-section" style="background: white; border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+        <h2 style='font-family: "Fredoka", sans-serif; font-size: 2rem; color: #3b82f6; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #f8fafc; margin-top: 0;'>Practice Exercises</h2>
+        
+        <h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Exercise 1: Personal Info Card</h3>
+        <p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+            Create variables for your personal information:
+        </p>
+        <ul style="margin: 1rem 0 1rem 2rem; padding-left: 0;">
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Your name (string)</li>
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Your age (integer)</li>
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Your height in meters (float)</li>
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Whether you like coding (boolean)</li>
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Print each variable and its type using <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>type()</code></li>
+        </ul>
+
+        <h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Exercise 2: Age Calculator</h3>
+        <p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+            Write a program that:
+        </p>
+        <ul style="margin: 1rem 0 1rem 2rem; padding-left: 0;">
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Asks for the user's birth year</li>
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Converts it to an integer</li>
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Calculates their age (2026 - birth_year)</li>
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Prints their age with a message</li>
+        </ul>
+
+        <h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Exercise 3: Shopping Calculator</h3>
+        <p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+            Create a shopping program that:
+        </p>
+        <ul style="margin: 1rem 0 1rem 2rem; padding-left: 0;">
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Asks for an item name (keep as string)</li>
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Asks for the price (convert to float)</li>
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Asks how many they want (convert to int)</li>
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Calculates total cost (price × quantity)</li>
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Prints: "Total for [quantity] [item]s: $[total]"</li>
+        </ul>
+
+        <h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Exercise 4: Temperature Converter</h3>
+        <p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+            Build a temperature converter:
+        </p>
+        <ul style="margin: 1rem 0 1rem 2rem; padding-left: 0;">
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Ask for temperature in Celsius</li>
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Convert to float</li>
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Calculate Fahrenheit: (celsius × 9/5) + 32</li>
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Print both temperatures</li>
+        </ul>
+
+        <h3 style='font-family: "Fredoka", sans-serif; font-size: 1.5rem; color: #8b5cf6; margin: 2rem 0 1rem;'>Challenge Exercise: Type Transformation</h3>
+        <p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+            Start with these variables and convert them:
+        </p>
+        <ul style="margin: 1rem 0 1rem 2rem; padding-left: 0;">
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;"><code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>score = "95"</code> → Convert to int and add 5</li>
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;"><code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>price = 19</code> → Convert to float and divide by 2</li>
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;"><code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>age = 15</code> → Convert to string and add " years old"</li>
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;"><code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>height = "1.75"</code> → Convert to float and multiply by 100</li>
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Print each result with what type it became</li>
+        </ul>
+
+        <div class="success-box" style="background: #d1fae5; border-left: 4px solid #10b981; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+            <h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; color: #3b82f6; margin: 1rem 0 0.5rem;'>✓ Testing Tip</h4>
+            <p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                Use <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>print(type(variable))</code> throughout your code to check what type each variable is. This helps you catch type errors before they cause problems!
+            </p>
+        </div>
+    </div>
+
+    <!-- Key Takeaways -->
+    <div class="content-section" style="background: white; border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+        <h2 style='font-family: "Fredoka", sans-serif; font-size: 2rem; color: #3b82f6; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #f8fafc; margin-top: 0;'>Key Takeaways</h2>
+        
+        <ol style="margin: 1rem 0 1rem 2rem; padding-left: 0; font-size: 1.05rem; line-height: 2;">
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;"><strong style="color: #3b82f6; font-weight: 600;">Variables</strong> are labeled containers that store data</li>
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;"><strong style="color: #3b82f6; font-weight: 600;">Four main data types:</strong> strings (text), integers (whole numbers), floats (decimals), booleans (True/False)</li>
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Use <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>type()</code> to check what type a variable is</li>
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;"><strong style="color: #3b82f6; font-weight: 600;">Strings</strong> need quotes, numbers don't, booleans are True/False (capital letters)</li>
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;"><code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>int()</code> converts to whole numbers (cuts off decimals)</li>
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;"><code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>float()</code> converts to decimal numbers</li>
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;"><code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>str()</code> converts to text</li>
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;"><strong style="color: #3b82f6; font-weight: 600;">input() always returns a string</strong> - convert it if you need a number!</li>
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Can't mix types in operations without converting first</li>
+            <li style="margin: 0.5rem 0; color: #1e293b; line-height: 1.6;">Use descriptive variable names like <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>player_score</code> not <code style='background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: "Courier New", monospace; font-size: 0.95em; color: #3b82f6;'>x</code></li>
+        </ol>
+
+        <div class="info-box" style="background: #e0f2fe; border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+            <h4 style='font-family: "Fredoka", sans-serif; font-size: 1.2rem; color: #3b82f6; margin: 1rem 0 0.5rem;'>🎯 What's Next?</h4>
+            <p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">
+                Now you understand the building blocks! In the next lesson, we'll learn about <strong style="color: #3b82f6; font-weight: 600;">operators and expressions</strong> - how to do calculations, combine strings, and perform operations on your data. You're building a solid foundation for programming! 🚀
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="text-align: center; padding: 2rem; color: #64748b; font-size: 0.9rem;">
+        <p style="margin-bottom: 1rem; color: #1e293b; font-size: 1.05rem; line-height: 1.8; margin-top: 0;">Year 9 Digital Technologies | Python Learning Hub</p>
+    </footer>
+
+</div>
+</div>
+
+</body>
+</html>
